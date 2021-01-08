@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDA9A9"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".showQuestionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#63B166"
+
+        android:layout_weight="2"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question: "
+            android:textSize="25dp"
+            android:textColor="#4A148C"
+
+            ></TextView>
+        <TextView
+            android:id="@+id/numbering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="25dp"
+            ></TextView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:background="#D1E4D2"
+    >
+    <TextView
+        android:id="@+id/txt_qs"
+        android:maxLines="2"
+        android:lineSpacingExtra="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is question akk aksm kmd akmsd ad"
+        android:textSize="20dp"
+        android:textColor="#1D1D1E"
+        android:textAlignment="center"
+        ></TextView>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:background="#ffffff"
+        android:padding="20dp"
+        >
+        <RadioGroup
+            android:id="@+id/radGrp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            >
+            <RadioButton
+                android:id="@+id/optA"
+                android:button="@color/trasnparent"
+                android:background="@drawable/rad_selector"
+                android:textColor="@drawable/txt_clr"
+                android:elevation="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is option a "
+                android:textSize="20dp"
+                android:padding="16dp"
+                ></RadioButton>
+
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/optB"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:button="@color/trasnparent"
+                android:background="@drawable/rad_selector"
+                android:textColor="@drawable/txt_clr"
+                android:elevation="4dp"
+
+
+                android:layout_height="wrap_content"
+                android:text="This is option b "
+                ></RadioButton>
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/optC"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:button="@color/trasnparent"
+                android:background="@drawable/rad_selector"
+                android:textColor="@drawable/txt_clr"
+                android:elevation="4dp"
+
+
+
+                android:layout_height="wrap_content"
+                android:text="This is option c "
+                ></RadioButton>
+
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/optD"
+                android:layout_width="match_parent"
+                android:button="@color/trasnparent"
+                android:background="@drawable/rad_selector"
+                android:textColor="@drawable/txt_clr"
+                android:padding="16dp"
+                android:elevation="4dp"
+
+
+                android:layout_height="wrap_content"
+                android:text="This is option d "
+                ></RadioButton>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="14dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#D81B60"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:textAlignment="center"
+            ></Button>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDA9A9"
+
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".OptActivity">
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logos"
+            ></ImageView>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Select Choices"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:textAllCaps="true"
+    android:textColor="#1625A8"
+    ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="No of Questions: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <Spinner
+
+            android:id="@+id/questions"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Level"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <Spinner
+            android:id="@+id/level"
+
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Type of Questions"
+            android:textSize="20dp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <Spinner
+            android:id="@+id/typeOFQs"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Category:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <Spinner
+            android:id="@+id/category"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            >
+        </Spinner>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/btn_startGame"
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Start Game"
+        ></Button>
+</LinearLayout>
+
+
+</LinearLayout>
